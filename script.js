@@ -5,7 +5,7 @@ let list = document.getElementById("ulel")
 function generateList() {
   let listItems = ""
   for (let i = 0; i < form.length; i++) {
-    listItems += "<li>" + '<input class = "checkbox1" type="checkbox" id="checkbox1">' + form[i]
+    listItems += `<li><input class = "checkbox1" type="checkbox" id="${form[i]}"><label for="${form[i]}">${form[i]}</label>`
   }
   list.innerHTML = listItems
 }
